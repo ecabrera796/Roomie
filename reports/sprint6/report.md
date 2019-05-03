@@ -1,66 +1,47 @@
 # Sprint 6 Report
 
+## Project Overview
+
+For our project, our intial scope was to create not only a fully working property listing platform, but also a roommate connection framework. After realizing how much of an addition the roommate functionality was, we instead scrapped it and focused on building out the framework for a clean and modern platform where users can be considered buyers or sellers and can view out listings. Sellers would be considered landlords, agents or property managers. Buyers would be considered anyone else. As stated, this would be a two sided market where based on the user attribute, the specific login would be conveyed. Listings would be integrated through our usage of a node JS express API server.
+
+Our focus was to ensure that we incorperated all of the 13 requirements while creating something that could have potential use outside of the classroom. It was a long journey, but we have something that fulfills our basic requirements, that also helped the entire team to learn what it takes to develop an application. Additionally, we created the base of a project that has real world potential, should any of us pursue it further.
+
 ## Roles
 
-- Junior Developer - [Giancarlo Barillas](https://github.com/giancarlobarillas), [Johnathan Garcia](https://github.com/)
-- Lead Developer - [Erick Cabrera](https://github.com/ecabrera796)
-- UI/UX -  [Jarron Bailey](https://github.com/jarronb)
+- Junior Developer - [Giancarlo Barillas](https://github.com/giancarlobarillas)
+- IT Ops - [Erick Cabrera](https://github.com/ecabrera796)
+- UI/UX - [Jarron Bailey](https://github.com/jarronb)
 - Project Manager - [Antoine Foggs](https://github.com/AFoggs)
-- IT Operations - [Theo Economos](https://github.com/teconomo)
+- Junior Developer - [Theo Economos](https://github.com/teconomo)
 
+## Sprint 6 Goals
 
-## Sprint 5 Goals
-
-<!-- The goal of this sprint was to create a foundation for building and maintaining React components. We want to finalize all key wireframes for this sprint and how they should look like so that we have a template to build off of. The goals from the class were to create a user and go through the process of 1 key functionally of the application -->
+- Connect API to work for admin page
+- Connect API to listing view
+- Connect API to creating a new listing
+- Create Template for listing view
+- Fully complete our what our home listing view will look like
+- Fix out our Photo Upload API for listings
+- Insert Test data
+- Complete Admin page.
+- Redesign homepage and connect all pages to homepage.
+- Install resource monitoring tool.
+- Create navigation menu for homepage.
+- Test out a global entity for our title font
 
 ## Completed goals
 
-<!-- Design primary artboards on adobe
-
-- The designs for the process of viewing potential properties has created and the artboards have been uploaded to GitHub
-  Design the primary CSS for all react components
-- The primary CSS file has been created and is currently on github. This CSS hold the styling for the template that we will use throughout the application.
-  Begin designing React Components
-- Currently we were able to design the following react components
-  ![Component1](../../images/sprint4/firstPage.PNG)
-  ![Component2](../../images/sprint4/loginpage.PNG)
-  ![Component3](../../images/sprint4/signup.PNG)
-  ![Component4](../../images/sprint4/aboutmepage.PNG)
-  - LoginButtons: which are displayed when the user opens the application
-  - Sign up form: which displays when the user selects sign up. Currently the application can switch between this component and the LoginButtons component.
-  - Log in Form: This component is used when the user wants to log in to their account
-  - About Me: This page deals with the about me component
-    We were able to continue building the servers
-- We were able to create a Redis server
-- Connect authenticated node app client to connect to Redis server
-  Design API’s for adding user to mongodb database
-  ![apiCalls](../../images/sprint4/apiCreated.PNG)
-- This is split into two parts Users and listings
-- The list of listings api goes as follows:
-  - Delete a listing
-  - Get a listing
-  - Get a user listing
-  - Post a listing
-  - Update a listing
-- The users list of apis goes as follows:
-  - Create a user account
-  - Delete user
-  - Get current user
-  - Login user
-  - Update user
-    Connect material ui to help create more responsive buttons and formatting -->
-
-## Final To-Do
-
-<!-- For the upcoming spring we will try to complete the following:
-
-- Connect all react components to their proper buttons and functions
-- Connect forms to post to the api and create a user
-- Create React component for the listings that a user can see
-- Create React component for the Leasing Agents if they are selling a property
-- Experiment with saving images onto mongodb
-
-For the following sprint the goals that we have placed for ourselves is to connect the api calls to the React components. This will help us make the application interact with the mongodb database. We will also need to test the database for injections and ensure that the api call are secure. -->
+- Connect API to listing view
+  - Users are now able to view listings that have been created.
+- Connect API to create a new listing.
+  - Users are now able to create new listings for the platform.
+- Create Template for listing view.
+  - Users are able to complete a basic template in order to upload listings.
+- Image Preview
+  - Users are able to preview images they upload to see how it looks before uploading listings.
+- Install resource monitoring tool
+  - [NetData](https://github.com/netdata/netdata) has been utilized to handle resource monitoring. It allows for real time granular monitoring of a servers resources. It collects as much data as possible automatically in real time to allow for accurate diagnosis.
+- We couldn't utilize the font we had hoped for as it required payment for 		personal or commercial license. So we instead fell back on our old one. 
 
 ## Sprint 6 Rubric Info
 
@@ -75,15 +56,63 @@ For the following sprint the goals that we have placed for ourselves is to conne
 9. Our development enviroments are done by running the npm start dev from the server. The server is located in the app folder. Once this is running we are allowed to see the react application
 10. All our designs can be seen in the design files along with the video of the application
 11. Currently our flowcharts of the application are in the reports and in the images folder. These contain the current database relationships.
-    ![DB Schema](../../images/sprint3/ERD_roomie.JPG)
+    ![DB Schema](ERD_roomie.JPG)
 12. Our trello is currently accurate with the completed tasks.
-13. Currently we have not implemented our 14 test data since we need to first completely connect the api calls to the react components.
+13. Currently we have not implemented our 15 test data since we need to first completely connect the api calls to the react components.
 
 ## Trello Board
 
-<!-- ![Trello1](../../images/sprint4/TrelloBoard1.PNG)
-![Trello2](../../images/sprint4/TrelloBoard2.PNG)
-![Trello3](../../images/sprint4/TrelloBoard3.PNG) -->
+Screenshots of all completion for Sprint 6:
+
+- Trello 1/3
+	![Trello 1](../../images/sprint6/trello1.JPG)
+
+- Trello 2/3
+	![Trello 2](../../images/sprint6/trello2.JPG)
+
+- Trello 3/3
+	![Trello 3](../../images/sprint6/trello3.JPG)	
+
+## Github issues
+
+- Full list of issues in chronological order:
+
+- Issue #1
+	![issue 1](../../images/sprint6/issue1.JPG)
+
+- Issue #2
+	![issue 2](../../images/sprint6/issue2.JPG)
+
+- Issue #3
+	![issue 3](../../images/sprint6/issue3.JPG)
+
+- Issue #4
+	![issue 4](../../images/sprint6/issue4.JPG)
+
+- Issue #5
+	![issue 5](../../images/sprint6/issue5.JPG)
+
+- Issue #6
+	![issue 6](../../images/sprint6/issue6.JPG)
+
+- Issue #7
+	![issue 7](../../images/sprint6/issue7.JPG)
+
+- Issue #8
+	![issue 8](../../images/sprint6/issue8.JPG)
+
+- Issue #9
+	![issue 9](../../images/sprint6/issue9.JPG)
+
+- Issue #10
+	![issue 10](../../images/sprint6/issue10.JPG)
+
+- Issue #11
+	![issue 11](../../images/sprint6/issue11.JPG)
+
+- Issue #12
+	![issue 12](../../images/sprint6/issue12.JPG)	
+
 
 #### Team Members
 
@@ -94,7 +123,5 @@ For the following sprint the goals that we have placed for ourselves is to conne
 [Jarron Bailey](https://github.com/jarronb)
 
 [Erick Cabrera](https://github.com/ecabrera796)
-
-[Johnathan Garcia](https://github.com/)
 
 [Giancarlo Barillas](https://github.com/giancarlobarillas)

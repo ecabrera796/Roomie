@@ -96,6 +96,49 @@
 }
  */
 
+// ***** @api {GET} api/user/:id Get a user *****
+
+/**
+ * @api {GET} api/user/:id Get a user
+ * @apiVersion 0.1.0
+ * @apiName GetUser
+ * @apiGroup User
+ * @apiDescription Request headers are need:  
+ * x-auth-token = token  
+ *
+ * @apiSuccess {Object} user  Object of user.
+ * 
+ * @apiSuccessExample {json} Success-Response:
+ *     HTTP/1.1 200 OK
+{
+    "user": {
+        "roles": [
+            "buyer, seller, Double seller"
+        ],
+        "roommates": [],
+        "favListings": [],
+        "_id": "5cbeb669ee9d8a4adc42d088",
+        "email": "test3@gmail.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "phoneNumber": "123-456-7890",
+        "bio": "Welcome, to rommie!",
+        "registeredDate": "2019-04-23T06:53:29.364Z",
+        "__v": 0
+    }
+}
+ * 
+ * @apiErrorExample {json} Error-Response:
+ *     HTTP/1.1 401 Unauthorized
+{
+    "errors": [
+        {
+            "message": "User don't exist"
+        }
+    ]
+}
+ */
+
 // ***** @api {GET} api/user/listings Get a users listings *****
 
 /**

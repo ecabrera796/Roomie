@@ -5,6 +5,7 @@ import * as actions from '../store/actions';
 
 const ProtectedRoute = props => {
   let { component: Component, isAuthenticated, ...rest } = props;
+
   return (
     <Route
       {...rest}
@@ -20,19 +21,5 @@ const ProtectedRoute = props => {
     />
   );
 };
-const mapStateToProps = state => {
-  return {
-    isAuthenticated: state.auth.isAuthenticated
-  };
-};
 
-const mapDispatchToProps = dispatch => {
-  return {
-    createUser: user => dispatch(actions.registerInit(user))
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ProtectedRoute);
+export default ProtectedRoute;

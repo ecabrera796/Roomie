@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 import createSagaMiddleware from 'redux-saga';
-import { watchAuth } from './sagas/index';
+import { watchAuth, watchListings, watchAdmin } from './sagas/index';
 
 const initialState = {};
 const sagaMiddleware = createSagaMiddleware();
@@ -22,7 +22,7 @@ const store = createStore(
   composeEnhancers(applyMiddleware(...middleware))
 );
 
-const sagas = [watchAuth];
+const sagas = [watchAuth, watchListings, watchAdmin];
 
 sagas.forEach(saga => {
   sagaMiddleware.run(saga);

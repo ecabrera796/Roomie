@@ -4,7 +4,8 @@ const initialState = {
   token: localStorage.getItem('token'),
   isAuthenticated: null,
   isLoading: null,
-  user: null
+  user: null,
+  done: false
 };
 
 const userLoading = (state, action) => {
@@ -32,7 +33,8 @@ const setUserAuthentication = (state, action) => {
     isLoading: false,
     isAuthenticated: true,
     user: action.payload.user,
-    token: action.payload.token
+    token: action.payload.token,
+    done: true
   };
   return state;
 };
@@ -44,7 +46,8 @@ const resetAuthentication = (state, action) => {
     token: null,
     user: null,
     isAuthenticated: false,
-    isLoading: false
+    isLoading: false,
+    done: true
   };
 
   return state;

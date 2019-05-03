@@ -40,6 +40,7 @@ router.post('/', (req, res) => {
         firstName: user.firstName,
         lastName: user.lastName,
         phoneNumber: user.phoneNumber,
+        roles: user.roles
       };
 
       // Create json web token: payload is new user
@@ -77,7 +78,7 @@ router.post('/user', (req, res) => {
 
   if (err) {
     const errors = errorsFormatter(err);
-    return res.status(400).json({ errors: errors });
+    return res.status(400).json({ errors: [{ message: 'All user fields must be entered' }] });
   }
   
 
@@ -112,6 +113,7 @@ router.post('/user', (req, res) => {
         .catch((err) => {
           if (err.errors) {
             const errors = errorsFormatter(err);
+            errors.type = "auth"
             return res.status(400).json({ errors: errors });
           } else {
             console.log(err);

@@ -8,9 +8,9 @@
 - Project Manager - [Giancarlo Barillas](https://github.com/giancarlobarillas)
 - IT Operations - [Erick Cabrera](https://github.com/ecabrera796)
 
-## Sprint 3 Goals
+## Sprint 4 Goals
 
-he goal of this sprint was to create a foundation for building and maintaining React components. We want to finalize all key wireframes for this sprint and how they should look like so that we have a template to build off of. The goals from the class were to create a user and go through the process of 1 key functionally of the application
+The goal of this sprint was to create a foundation for building and maintaining React components. We want to finalize all key wireframes for this sprint and how they should look like so that we have a template to build off of. The goals from the class were to create a user and go through the process of 1 key functionally of the application
 
 ## Completed goals
 

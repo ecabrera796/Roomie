@@ -1,4 +1,4 @@
-import * as actionTypes from "./actionTypes";
+import * as actionTypes from './actionTypes';
 
 // GET ERRORS
 export const getErrors = errors => {
@@ -9,9 +9,8 @@ export const getErrors = errors => {
 };
 
 // Clear errors
-export const clearErrors = errors => {
+export const clearErrors = () => {
   return {
-    type: actionTypes.CLEAR_ERRORS,
-    payload: { errors: errors }
+    type: actionTypes.CLEAR_ERRORS
   };
 };
